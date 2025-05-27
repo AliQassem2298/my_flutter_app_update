@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final NetworkStatus _networkStatus = NetworkStatus.online;
   ConnectivityResult? _connectionType;
   String? apkUrl;
-
+// asd
   Future<void> _checkForUpdate() async {
     try {
       final resp = await Dio().get(
