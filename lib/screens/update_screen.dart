@@ -29,7 +29,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
   Future<void> _checkUpdate() async {
     try {
       final resp = await Dio().get(
-          'https://gist.githubusercontent.com/AliQassem2298/5df393b869256148d81f82add12fe19d/raw/update.json');
+          'https://github.com/AliQassem2298/my_flutter_app_update/blob/master/docs/update.json');
 
       // إذا أرجعنا String، حوله إلى Map عبر jsonDecode:
       final Map<String, dynamic> jsonData =

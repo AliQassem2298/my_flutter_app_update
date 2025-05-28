@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<void> _checkForUpdate() async {
     try {
       final resp = await Dio().get(
-          'https://gist.githubusercontent.com/AliQassem2298/5df393b869256148d81f82add12fe19d/raw/update.json');
+          'https://github.com/AliQassem2298/my_flutter_app_update/blob/master/docs/update.json');
       final body =
           resp.data is String ? resp.data as String : jsonEncode(resp.data);
       final json = jsonDecode(body) as Map<String, dynamic>;
